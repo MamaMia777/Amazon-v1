@@ -1,0 +1,1 @@
+{"version":3,"file":"return-review.object.js","sourceRoot":"","sources":["../../../src/review/return-review.object.ts"],"names":[],"mappings":";;;AACa,QAAA,kBAAkB,GAAwB;IAGnD,IAAI,EAAE;QACF,MAAM,EAAE;YACJ,EAAE,EAAE,IAAI;YACR,IAAI,EAAE,IAAI;YACV,UAAU,EAAE,IAAI;SACnB;KACJ;IACD,SAAS,EAAE,IAAI;IACf,SAAS,EAAE,IAAI;IACf,IAAI,EAAE,IAAI;IACV,MAAM,EAAE,IAAI;IACZ,EAAE,EAAE,IAAI;CACX,CAAA"}

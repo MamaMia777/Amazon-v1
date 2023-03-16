@@ -1,0 +1,98 @@
+import { ProductDto } from './dto/product.dto';
+import { GetAllProductsDto } from './dto/get-all.product.dto';
+import { ProductService } from './product.service';
+export declare class ProductController {
+    private readonly productService;
+    constructor(productService: ProductService);
+    getAll(queryDto: GetAllProductsDto): Promise<{
+        products: {
+            createdAt?: Date;
+            updatedAt?: Date;
+            name?: string;
+            slug?: string;
+            description?: string;
+            price?: number;
+            image?: string;
+            orderItems?: import(".prisma/client").OrderItem[];
+            reviews?: import(".prisma/client").Review[];
+            category?: import(".prisma/client").Category;
+            user?: import(".prisma/client").User;
+            id?: number;
+            categoryId?: number;
+            userId?: number;
+            _count?: import(".prisma/client").Prisma.ProductCountOutputType;
+        }[];
+        length: number;
+    }>;
+    getById(id: string): Promise<{
+        createdAt?: Date;
+        updatedAt?: Date;
+        name?: string;
+        slug?: string;
+        description?: string;
+        price?: number;
+        image?: string;
+        orderItems?: import(".prisma/client").OrderItem[];
+        reviews?: import(".prisma/client").Review[];
+        category?: import(".prisma/client").Category;
+        user?: import(".prisma/client").User;
+        id?: number;
+        categoryId?: number;
+        userId?: number;
+        _count?: import(".prisma/client").Prisma.ProductCountOutputType;
+    }>;
+    getSimilar(id: string): Promise<{
+        createdAt?: Date;
+        updatedAt?: Date;
+        name?: string;
+        slug?: string;
+        description?: string;
+        price?: number;
+        image?: string;
+        orderItems?: import(".prisma/client").OrderItem[];
+        reviews?: import(".prisma/client").Review[];
+        category?: import(".prisma/client").Category;
+        user?: import(".prisma/client").User;
+        id?: number;
+        categoryId?: number;
+        userId?: number;
+        _count?: import(".prisma/client").Prisma.ProductCountOutputType;
+    }[]>;
+    getBySlug(slug: string): Promise<{
+        createdAt?: Date;
+        updatedAt?: Date;
+        name?: string;
+        slug?: string;
+        description?: string;
+        price?: number;
+        image?: string;
+        orderItems?: import(".prisma/client").OrderItem[];
+        reviews?: import(".prisma/client").Review[];
+        category?: import(".prisma/client").Category;
+        user?: import(".prisma/client").User;
+        id?: number;
+        categoryId?: number;
+        userId?: number;
+        _count?: import(".prisma/client").Prisma.ProductCountOutputType;
+    }>;
+    getProductByCategory(categorySlug: string): Promise<{
+        createdAt?: Date;
+        updatedAt?: Date;
+        name?: string;
+        slug?: string;
+        description?: string;
+        price?: number;
+        image?: string;
+        orderItems?: import(".prisma/client").OrderItem[];
+        reviews?: import(".prisma/client").Review[];
+        category?: import(".prisma/client").Category;
+        user?: import(".prisma/client").User;
+        id?: number;
+        categoryId?: number;
+        userId?: number;
+        _count?: import(".prisma/client").Prisma.ProductCountOutputType;
+    }[]>;
+    createProduct(): Promise<number>;
+    updateProduct(id: string, dto: ProductDto): Promise<import(".prisma/client").Product>;
+    deleteProduct(productId: string): Promise<void>;
+}
